@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kauan Alysson Silva </h1>
+    </header>
+    <section>
+        <h2>Avaliação</h2>
+        <p>Fundamentos de TI</p>
+        <p>Data: <span id="data"></span></p>
+        <p>Dia da semana: <span id="diaSemana"></span></p>
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/10/cristiano-ronaldo-e1697230106138.jpg?w=1220&h=674&crop=1" alt="Papai cris">
+    </section>
+
+    <script>
+        // JavaScript para exibir a data e o dia da semana atual
+        const diasSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+        const dataAtual = new Date();
+        document.getElementById('data').innerText = dataAtual.toLocaleDateString('pt-BR');
+        document.getElementById('diaSemana').innerText = diasSemana[dataAtual.getDay()];
+    </script>
+</body>
+</html>
